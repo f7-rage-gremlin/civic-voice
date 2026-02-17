@@ -10,7 +10,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-lg mx-auto px-4 py-6">
+      <div className="max-w-lg mx-auto px-4 pt-24 pb-6">
         {activeTab === "submissions" && <SubmissionsPage />}
         {activeTab === "vote" && <VotePage />}
         {activeTab === "follow" && <FollowPage />}
