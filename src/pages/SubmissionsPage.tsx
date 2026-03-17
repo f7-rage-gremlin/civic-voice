@@ -137,7 +137,7 @@ const SubmissionsPage = () => {
           onChange={(e) => setNewDescription(e.target.value)}
           placeholder="Describe your proposed law..."
           rows={3}
-          className="w-full bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none mb-3 resize-none"
+          className="w-full bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none mb-3 resize-none"
         />
         <button
           onClick={handleSubmit}
