@@ -43,7 +43,7 @@ const SettingsPage = () => {
       {/* Voting Mode */}
       <section className="mb-8">
         <h2 className="text-lg mb-4 text-muted-foreground">VOTING</h2>
-        <div className="space-y-2">
+        <div className="space-y-4">
           <SettingOption
             active={settings.votingMode === "manual"}
             onClick={() => setSettings((s) => ({ ...s, votingMode: "manual" }))}
