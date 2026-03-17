@@ -71,7 +71,7 @@ const VotePage = () => {
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Add a comment..."
-              className="flex-1 bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none"
+              className="flex-1 bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none"
             />
             <button className="bg-primary text-primary-foreground px-4 py-3 rounded font-bold hover:opacity-90 transition-opacity">
               <Send size={18} />
