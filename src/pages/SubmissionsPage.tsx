@@ -71,7 +71,7 @@ const SubmissionsPage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <div className="bg-card border border-border rounded p-5">
+        <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex gap-4">
             <VoteControl
               upvotes={selectedSubmission.upvotes}
@@ -108,9 +108,9 @@ const SubmissionsPage = () => {
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Add a comment..."
-              className="flex-1 bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none"
+              className="flex-1 bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none"
             />
-            <button className="bg-primary text-primary-foreground px-4 py-3 rounded font-bold hover:opacity-90 transition-opacity">
+            <button className="bg-primary text-primary-foreground px-4 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">
               <Send size={18} />
             </button>
           </div>
@@ -125,23 +125,23 @@ const SubmissionsPage = () => {
       <h1 className="text-3xl mb-6 text-glow">LAW SUBMISSIONS</h1>
 
       {/* Submit form */}
-      <div className="bg-card border border-border rounded p-4 mb-6">
+      <div className="bg-card border border-border rounded-lg p-4 mb-6">
         <input
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
           placeholder="Title of your law submission..."
-          className="w-full bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none mb-3 font-bold"
+          className="w-full bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none mb-3 font-bold"
         />
         <textarea
           value={newDescription}
           onChange={(e) => setNewDescription(e.target.value)}
           placeholder="Describe your proposed law..."
           rows={3}
-          className="w-full bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none mb-3 resize-none"
+          className="w-full bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none mb-3 resize-none"
         />
         <button
           onClick={handleSubmit}
-          className="bg-primary text-primary-foreground px-6 py-2.5 rounded font-bold text-sm tracking-wider hover:opacity-90 transition-opacity w-full"
+          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-bold text-sm tracking-wider hover:opacity-90 transition-opacity w-full"
         >
           SUBMIT
         </button>
@@ -153,7 +153,7 @@ const SubmissionsPage = () => {
           <div
             key={submission.id}
             onClick={() => setSelectedSubmission(submission)}
-            className="bg-card border border-border rounded p-4 flex gap-4 cursor-pointer hover:border-primary/30 transition-colors"
+            className="bg-card border border-border rounded-lg p-4 flex gap-4 cursor-pointer hover:border-primary/30 transition-colors"
           >
             <VoteControl
               upvotes={submission.upvotes}

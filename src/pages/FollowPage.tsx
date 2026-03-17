@@ -47,7 +47,7 @@ const FollowPage = () => {
           </div>
           <button
             onClick={() => toggleFollow(selectedUser.id)}
-            className={`flex items-center gap-2 px-4 py-2 rounded font-bold text-sm transition-all ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-sm transition-all ${
               selectedUser.isFollowing
                 ? "bg-primary text-primary-foreground"
                 : "bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground"
@@ -81,7 +81,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No posts yet</p>
             ) : (
               selectedUser.posts.map((post) => (
-                <div key={post.id} className="bg-card border border-border rounded p-4 flex gap-3">
+                <div key={post.id} className="bg-card border border-border rounded-lg p-4 flex gap-3">
                   <VoteControl upvotes={post.upvotes} downvotes={post.downvotes} userVote={post.userVote} onVote={() => {}} size="sm" />
                   <div>
                     <h3 className="font-bold">{post.title}</h3>
@@ -99,7 +99,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No comments yet</p>
             ) : (
               selectedUser.commentHistory.map((comment) => (
-                <div key={comment.id} className="bg-card border border-border rounded p-4">
+                <div key={comment.id} className="bg-card border border-border rounded-lg p-4">
                   <p className="text-sm">{comment.text}</p>
                   <p className="text-xs text-muted-foreground mt-2">↑ {comment.upvotes}</p>
                 </div>
@@ -114,7 +114,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No voting history</p>
             ) : (
               selectedUser.votingHistory.map((vh, i) => (
-                <div key={i} className="bg-card border border-border rounded p-4 flex items-center justify-between">
+                <div key={i} className="bg-card border border-border rounded-lg p-4 flex items-center justify-between">
                   <span className="font-bold uppercase text-sm">{vh.lawTitle}</span>
                   <span className={`flex items-center gap-1 text-xs font-bold ${vh.vote === "yes" ? "text-vote-yes" : "text-vote-no"}`}>
                     {vh.vote === "yes" ? <Check size={14} /> : <X size={14} />}
@@ -140,7 +140,7 @@ const FollowPage = () => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search people..."
-          className="w-full bg-input text-foreground pl-10 pr-4 py-3 rounded border border-border focus:border-primary focus:outline-none"
+          className="w-full bg-input text-foreground pl-10 pr-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none"
         />
       </div>
 
@@ -148,7 +148,7 @@ const FollowPage = () => {
         {filteredUsers.map((user) => (
           <div
             key={user.id}
-            className="bg-card border border-border rounded p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
+            className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
           >
             <div
               className="flex-1 min-w-0"
@@ -159,7 +159,7 @@ const FollowPage = () => {
             </div>
             <button
               onClick={(e) => { e.stopPropagation(); toggleFollow(user.id); }}
-              className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded font-bold text-xs tracking-wider transition-all ${
+              className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg font-bold text-xs tracking-wider transition-all ${
                 user.isFollowing
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary text-muted-foreground hover:text-foreground"

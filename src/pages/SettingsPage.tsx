@@ -86,7 +86,7 @@ const SettingsPage = () => {
             <div className="mt-6 space-y-4">
               <h3 className="text-sm font-bold text-muted-foreground tracking-wider">INFLUENCE WEIGHTS</h3>
               {followedUsers.map((user) => (
-                <div key={user.id} className="bg-card border border-border rounded p-4">
+                <div key={user.id} className="bg-card border border-border rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="font-bold uppercase text-sm">{user.name}</span>
                     <span className="font-mono text-primary text-sm font-bold">{(weights[user.id] ?? 0).toFixed(1)}</span>

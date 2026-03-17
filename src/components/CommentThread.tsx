@@ -39,7 +39,7 @@ const CommentItem = ({ comment, depth }: { comment: Comment; depth: number }) =>
 
   return (
     <div className="py-2">
-      <div className="bg-card border border-border rounded p-4">
+      <div className="bg-card border border-border rounded-lg p-4">
         <div className="flex gap-3">
           <VoteControl
             upvotes={currentComment.upvotes}
@@ -66,11 +66,11 @@ const CommentItem = ({ comment, depth }: { comment: Comment; depth: number }) =>
                   value={replyText}
                   onChange={(e) => setReplyText(e.target.value)}
                   placeholder="Write a reply..."
-                  className="flex-1 bg-input text-foreground text-sm px-3 py-2 rounded border border-border focus:border-primary focus:outline-none"
+                  className="flex-1 bg-input text-foreground text-sm px-3 py-2 rounded-lg border border-border focus:border-primary focus:outline-none"
                 />
                 <button
                   onClick={() => { setReplyText(""); setShowReplyInput(false); }}
-                  className="bg-primary text-primary-foreground text-sm px-3 py-2 rounded font-bold hover:opacity-90 transition-opacity"
+                  className="bg-primary text-primary-foreground text-sm px-3 py-2 rounded-lg font-bold hover:opacity-90 transition-opacity"
                 >
                   POST
                 </button>

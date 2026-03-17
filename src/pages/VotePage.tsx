@@ -28,7 +28,7 @@ const VotePage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <div className="bg-card border border-border rounded p-5">
+        <div className="bg-card border border-border rounded-lg p-5">
           <h1 className="text-2xl mb-4">{selectedLaw.title}</h1>
           <p className="text-foreground leading-relaxed">{selectedLaw.description}</p>
 
@@ -71,9 +71,9 @@ const VotePage = () => {
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Add a comment..."
-              className="flex-1 bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none"
+              className="flex-1 bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none"
             />
-            <button className="bg-primary text-primary-foreground px-4 py-3 rounded font-bold hover:opacity-90 transition-opacity">
+            <button className="bg-primary text-primary-foreground px-4 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">
               <Send size={18} />
             </button>
           </div>
@@ -91,7 +91,7 @@ const VotePage = () => {
         {laws.map((law, index) => (
           <div
             key={law.id}
-            className="bg-card border border-border rounded p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
+            className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
           >
             <div className="flex-1 min-w-0" onClick={() => setSelectedLaw(law)}>
               <h3 className="font-bold text-foreground uppercase tracking-wide">{law.title}</h3>
@@ -139,7 +139,7 @@ const VoteButton = ({
   return (
     <button
       onClick={(e) => { e.stopPropagation(); onClick(); }}
-      className={`flex items-center gap-1.5 rounded font-bold text-xs tracking-wider transition-all ${
+      className={`flex items-center gap-1.5 rounded-lg font-bold text-xs tracking-wider transition-all ${
         compact ? "px-3 py-2" : "px-4 py-2.5"
       } ${active ? activeClass : "bg-secondary text-muted-foreground hover:text-foreground"}`}
     >
