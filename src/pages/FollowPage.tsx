@@ -114,7 +114,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No voting history</p>
             ) : (
               selectedUser.votingHistory.map((vh, i) => (
-                <div key={i} className="bg-card border border-border rounded p-4 flex items-center justify-between">
+                <div key={i} className="bg-card border border-border rounded-lg p-4 flex items-center justify-between">
                   <span className="font-bold uppercase text-sm">{vh.lawTitle}</span>
                   <span className={`flex items-center gap-1 text-xs font-bold ${vh.vote === "yes" ? "text-vote-yes" : "text-vote-no"}`}>
                     {vh.vote === "yes" ? <Check size={14} /> : <X size={14} />}
