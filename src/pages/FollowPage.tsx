@@ -81,7 +81,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No posts yet</p>
             ) : (
               selectedUser.posts.map((post) => (
-                <div key={post.id} className="bg-card border border-border rounded p-4 flex gap-3">
+                <div key={post.id} className="bg-card border border-border rounded-lg p-4 flex gap-3">
                   <VoteControl upvotes={post.upvotes} downvotes={post.downvotes} userVote={post.userVote} onVote={() => {}} size="sm" />
                   <div>
                     <h3 className="font-bold">{post.title}</h3>
