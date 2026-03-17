@@ -9,7 +9,7 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState("submissions");
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background transition-colors duration-300" data-theme={activeTab}>
       <div className="max-w-3xl mx-auto px-4 pt-24 pb-6 w-full">
         {activeTab === "submissions" && <SubmissionsPage />}
         {activeTab === "vote" && <VotePage />}

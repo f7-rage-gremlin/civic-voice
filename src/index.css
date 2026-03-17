@@ -6,50 +6,116 @@
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 45 20% 90%;
+    --background: 48 90% 92%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 45 20% 90%;
+    --card: 48 80% 96%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 45 20% 90%;
+    --popover: 48 80% 96%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 72 100% 50%;
+    --primary: 45 100% 50%;
     --primary-foreground: 0 0% 5%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 45 20% 90%;
+    --secondary: 48 40% 85%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 48 30% 88%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 72 100% 50%;
+    --accent: 45 100% 50%;
     --accent-foreground: 0 0% 5%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 45 20% 90%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 14%;
-    --ring: 72 100% 50%;
+    --border: 45 30% 78%;
+    --input: 48 40% 90%;
+    --ring: 45 100% 50%;
 
     --radius: 0.25rem;
 
-    --upvote: 72 100% 50%;
+    --upvote: 45 100% 45%;
     --downvote: 0 72% 51%;
     --vote-yes: 142 71% 45%;
     --vote-no: 0 72% 51%;
-    --vote-abstain: 0 0% 40%;
+    --vote-abstain: 0 0% 50%;
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 45 20% 90%;
-    --sidebar-primary: 72 100% 50%;
+    --sidebar-background: 48 80% 94%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 45 100% 50%;
     --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 45 20% 90%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 72 100% 50%;
+    --sidebar-accent: 48 40% 85%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 45 30% 78%;
+    --sidebar-ring: 45 100% 50%;
+  }
+
+  /* Vote page — Green */
+  [data-theme="vote"] {
+    --background: 142 40% 92%;
+    --foreground: 0 0% 8%;
+    --card: 142 35% 96%;
+    --card-foreground: 0 0% 8%;
+    --popover: 142 35% 96%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 142 71% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 20% 85%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 142 15% 88%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 142 71% 40%;
+    --accent-foreground: 0 0% 100%;
+    --border: 142 20% 78%;
+    --input: 142 20% 90%;
+    --ring: 142 71% 40%;
+    --upvote: 142 71% 40%;
+  }
+
+  /* Follow page — Blue */
+  [data-theme="follow"] {
+    --background: 210 60% 92%;
+    --foreground: 0 0% 8%;
+    --card: 210 50% 96%;
+    --card-foreground: 0 0% 8%;
+    --popover: 210 50% 96%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 30% 85%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 210 20% 88%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --border: 210 25% 78%;
+    --input: 210 30% 90%;
+    --ring: 210 100% 50%;
+    --upvote: 210 100% 50%;
+  }
+
+  /* Settings page — Red */
+  [data-theme="settings"] {
+    --background: 0 50% 93%;
+    --foreground: 0 0% 8%;
+    --card: 0 40% 96%;
+    --card-foreground: 0 0% 8%;
+    --popover: 0 40% 96%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 25% 86%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 0 15% 88%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 72% 51%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 20% 80%;
+    --input: 0 25% 91%;
+    --ring: 0 72% 51%;
+    --upvote: 0 72% 51%;
   }
 }
 
