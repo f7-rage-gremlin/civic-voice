@@ -148,7 +148,7 @@ const FollowPage = () => {
         {filteredUsers.map((user) => (
           <div
             key={user.id}
-            className="bg-card border border-border rounded p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
+            className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 cursor-pointer hover:border-primary/30 transition-colors"
           >
             <div
               className="flex-1 min-w-0"
