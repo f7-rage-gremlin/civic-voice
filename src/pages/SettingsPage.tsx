@@ -22,7 +22,7 @@ const SettingsPage = () => {
       {/* Privacy */}
       <section className="mb-8">
         <h2 className="text-lg mb-4 text-muted-foreground">PRIVACY</h2>
-        <div className="space-y-2">
+        <div className="space-y-4">
           <SettingOption
             active={settings.privacy === "public"}
             onClick={() => setSettings((s) => ({ ...s, privacy: "public" }))}
