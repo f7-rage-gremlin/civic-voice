@@ -28,19 +28,21 @@ const VotePage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <h1 className="text-2xl mb-4">{selectedLaw.title}</h1>
-        <p className="text-foreground leading-relaxed">{selectedLaw.description}</p>
+        <div className="bg-card border border-border rounded p-5">
+          <h1 className="text-2xl mb-4">{selectedLaw.title}</h1>
+          <p className="text-foreground leading-relaxed">{selectedLaw.description}</p>
 
-        {selectedLaw.bulletPoints.length > 0 && (
-          <ul className="mt-4 space-y-2">
-            {selectedLaw.bulletPoints.map((bp, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm">
-                <span className="text-primary mt-0.5">•</span>
-                <span>{bp}</span>
-              </li>
-            ))}
-          </ul>
-        )}
+          {selectedLaw.bulletPoints.length > 0 && (
+            <ul className="mt-4 space-y-2">
+              {selectedLaw.bulletPoints.map((bp, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm">
+                  <span className="text-primary mt-0.5">•</span>
+                  <span>{bp}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
 
         <div className="flex gap-3 mt-6">
           <VoteButton

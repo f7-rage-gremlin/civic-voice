@@ -71,29 +71,31 @@ const SubmissionsPage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <div className="flex gap-4">
-          <VoteControl
-            upvotes={selectedSubmission.upvotes}
-            downvotes={selectedSubmission.downvotes}
-            userVote={selectedSubmission.userVote}
-            onVote={(vote) => handleVote(selectedSubmission.id, vote)}
-          />
-          <div className="flex-1">
-            <h1 className="text-2xl mb-2">{selectedSubmission.title}</h1>
-            <p className="text-sm text-muted-foreground mb-1">
-              Posted by <span className="text-primary">@{selectedSubmission.author}</span> · {selectedSubmission.createdAt}
-            </p>
-            <p className="text-foreground leading-relaxed mt-4">{selectedSubmission.description}</p>
-            {selectedSubmission.bulletPoints && (
-              <ul className="mt-4 space-y-2">
-                {selectedSubmission.bulletPoints.map((bp, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>{bp}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
+        <div className="bg-card border border-border rounded p-5">
+          <div className="flex gap-4">
+            <VoteControl
+              upvotes={selectedSubmission.upvotes}
+              downvotes={selectedSubmission.downvotes}
+              userVote={selectedSubmission.userVote}
+              onVote={(vote) => handleVote(selectedSubmission.id, vote)}
+            />
+            <div className="flex-1">
+              <h1 className="text-2xl mb-2">{selectedSubmission.title}</h1>
+              <p className="text-sm text-muted-foreground mb-1">
+                Posted by <span className="text-primary">@{selectedSubmission.author}</span> · {selectedSubmission.createdAt}
+              </p>
+              <p className="text-foreground leading-relaxed mt-4">{selectedSubmission.description}</p>
+              {selectedSubmission.bulletPoints && (
+                <ul className="mt-4 space-y-2">
+                  {selectedSubmission.bulletPoints.map((bp, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <span className="text-primary mt-0.5">•</span>
+                      <span>{bp}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
         </div>
 
