@@ -131,7 +131,7 @@ const SettingOption = ({
         : "border border-border opacity-50 hover:opacity-75 hover:border-primary/30"
     }`}
   >
-    <span className={`mt-0.5 ${active ? "text-primary" : "text-muted-foreground"}`}>{icon}</span>
+    <span className={`mt-0.5 ${active ? "text-accent-secondary" : "text-muted-foreground"}`}>{icon}</span>
     <div>
       <span className={`font-bold text-sm tracking-wider ${active ? "text-primary" : "text-foreground"}`}>{label}</span>
       <p className="text-xs text-muted-foreground mt-1">{description}</p>
