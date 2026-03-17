@@ -125,8 +125,10 @@ const SettingOption = ({
 }) => (
   <button
     onClick={onClick}
-    className={`w-full text-left bg-card border rounded p-4 flex items-start gap-4 transition-all ${
-      active ? "border-primary" : "border-border hover:border-primary/30"
+    className={`w-full text-left bg-card rounded-lg p-4 flex items-start gap-4 transition-all ${
+      active
+        ? "border-[3px] border-primary ring-2 ring-primary/20"
+        : "border border-border opacity-50 hover:opacity-75 hover:border-primary/30"
     }`}
   >
     <span className={`mt-0.5 ${active ? "text-primary" : "text-muted-foreground"}`}>{icon}</span>
