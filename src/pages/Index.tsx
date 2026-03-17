@@ -62,6 +62,9 @@ const pageThemes = {
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState<keyof typeof pageThemes>("submissions");
+  useEffect(() => {
+    document.documentElement.removeAttribute("data-theme");
+  }, []);
 
   return (
     <div
