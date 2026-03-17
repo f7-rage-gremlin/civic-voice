@@ -76,7 +76,7 @@ const FollowPage = () => {
         </div>
 
         {profileTab === "posts" && (
-          <div className="space-y-3">
+          <div className="space-y-4">
             {selectedUser.posts.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No posts yet</p>
             ) : (
