@@ -155,7 +155,7 @@ const FollowPage = () => {
               onClick={() => setSelectedUser(user)}
             >
               <h3 className="font-bold uppercase">{user.name}</h3>
-              <p className="text-sm text-accent-tertiary font-medium">@{user.handle}</p>
+              <p className="text-sm text-muted-foreground">@{user.handle}</p>
             </div>
             <button
               onClick={(e) => { e.stopPropagation(); toggleFollow(user.id); }}

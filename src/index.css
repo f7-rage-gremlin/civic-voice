@@ -6,56 +6,50 @@
 
 @layer base {
   :root {
-    --background: 42 85% 72%;
-    --foreground: 30 80% 12%;
+    --background: 48 90% 92%;
+    --foreground: 0 0% 8%;
 
-    --card: 42 30% 97%;
-    --card-foreground: 30 80% 12%;
+    --card: 48 80% 96%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 42 30% 97%;
-    --popover-foreground: 30 80% 12%;
+    --popover: 48 80% 96%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 38 100% 50%;
+    --primary: 45 100% 50%;
     --primary-foreground: 0 0% 5%;
 
-    --secondary: 42 50% 90%;
-    --secondary-foreground: 42 50% 15%;
+    --secondary: 48 40% 85%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 42 30% 92%;
-    --muted-foreground: 30 40% 30%;
+    --muted: 48 30% 88%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 38 100% 50%;
+    --accent: 45 100% 50%;
     --accent-foreground: 0 0% 5%;
-
-    --accent-secondary: 18 90% 55%;
-    --accent-secondary-foreground: 0 0% 100%;
-
-    --accent-tertiary: 190 70% 45%;
-    --accent-tertiary-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 42 20% 82%;
-    --input: 42 30% 95%;
-    --ring: 38 100% 50%;
+    --border: 45 30% 78%;
+    --input: 48 40% 90%;
+    --ring: 45 100% 50%;
 
     --radius: 0.75rem;
 
-    --upvote: 38 100% 45%;
+    --upvote: 45 100% 45%;
     --downvote: 0 72% 51%;
     --vote-yes: 142 71% 45%;
     --vote-no: 0 72% 51%;
     --vote-abstain: 0 0% 50%;
 
-    --sidebar-background: 42 80% 94%;
-    --sidebar-foreground: 30 80% 12%;
-    --sidebar-primary: 38 100% 50%;
+    --sidebar-background: 48 80% 94%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 45 100% 50%;
     --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 42 40% 85%;
-    --sidebar-accent-foreground: 42 50% 15%;
-    --sidebar-border: 42 30% 78%;
-    --sidebar-ring: 38 100% 50%;
+    --sidebar-accent: 48 40% 85%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 45 30% 78%;
+    --sidebar-ring: 45 100% 50%;
   }
 }
 
