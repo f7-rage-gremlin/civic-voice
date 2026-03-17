@@ -6,10 +6,10 @@ interface BottomNavProps {
 }
 
 const tabs = [
-  { id: "submissions", label: "SUBMIT", icon: FileText },
-  { id: "vote", label: "VOTE", icon: Vote },
-  { id: "follow", label: "FOLLOW", icon: Users },
-  { id: "settings", label: "SETTINGS", icon: Settings },
+  { id: "submissions", label: "SUBMIT", icon: FileText, color: "text-yellow-600" },
+  { id: "vote", label: "VOTE", icon: Vote, color: "text-green-600" },
+  { id: "follow", label: "FOLLOW", icon: Users, color: "text-blue-600" },
+  { id: "settings", label: "SETTINGS", icon: Settings, color: "text-red-600" },
 ];
 
 const BottomNav = ({ activeTab, onTabChange }: BottomNavProps) => {
@@ -24,7 +24,7 @@ const BottomNav = ({ activeTab, onTabChange }: BottomNavProps) => {
               key={tab.id}
               onClick={() => onTabChange(tab.id)}
               className={`flex flex-col items-center gap-1 px-4 py-2 transition-colors ${
-                isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                isActive ? tab.color : "text-muted-foreground hover:text-foreground"
               }`}
             >
               <Icon size={20} strokeWidth={isActive ? 2.5 : 1.5} />
