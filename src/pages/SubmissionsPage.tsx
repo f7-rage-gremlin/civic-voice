@@ -71,7 +71,7 @@ const SubmissionsPage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <div className="bg-card border border-border rounded p-5">
+        <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex gap-4">
             <VoteControl
               upvotes={selectedSubmission.upvotes}
