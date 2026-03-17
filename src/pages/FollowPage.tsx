@@ -109,7 +109,7 @@ const FollowPage = () => {
         )}
 
         {profileTab === "voting" && (
-          <div className="space-y-2">
+          <div className="space-y-4">
             {selectedUser.votingHistory.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No voting history</p>
             ) : (
