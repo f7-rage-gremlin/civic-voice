@@ -94,7 +94,7 @@ const FollowPage = () => {
         )}
 
         {profileTab === "comments" && (
-          <div className="space-y-3">
+          <div className="space-y-4">
             {selectedUser.commentHistory.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No comments yet</p>
             ) : (
