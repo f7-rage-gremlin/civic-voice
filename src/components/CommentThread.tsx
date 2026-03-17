@@ -39,7 +39,7 @@ const CommentItem = ({ comment, depth }: { comment: Comment; depth: number }) =>
 
   return (
     <div className="py-2">
-      <div className="bg-card border border-border rounded p-4">
+      <div className="bg-card border border-border rounded-lg p-4">
         <div className="flex gap-3">
           <VoteControl
             upvotes={currentComment.upvotes}
