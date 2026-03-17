@@ -99,7 +99,7 @@ const FollowPage = () => {
               <p className="text-muted-foreground text-center py-8">No comments yet</p>
             ) : (
               selectedUser.commentHistory.map((comment) => (
-                <div key={comment.id} className="bg-card border border-border rounded p-4">
+                <div key={comment.id} className="bg-card border border-border rounded-lg p-4">
                   <p className="text-sm">{comment.text}</p>
                   <p className="text-xs text-muted-foreground mt-2">↑ {comment.upvotes}</p>
                 </div>
