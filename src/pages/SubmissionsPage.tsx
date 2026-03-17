@@ -125,7 +125,7 @@ const SubmissionsPage = () => {
       <h1 className="text-3xl mb-6 text-glow">LAW SUBMISSIONS</h1>
 
       {/* Submit form */}
-      <div className="bg-card border border-border rounded p-4 mb-6">
+      <div className="bg-card border border-border rounded-lg p-4 mb-6">
         <input
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
