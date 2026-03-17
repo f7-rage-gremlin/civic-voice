@@ -6,10 +6,10 @@ interface BottomNavProps {
 }
 
 const tabs = [
-  { id: "submissions", label: "SUBMIT", icon: FileText },
-  { id: "vote", label: "VOTE", icon: Vote },
-  { id: "follow", label: "FOLLOW", icon: Users },
-  { id: "settings", label: "SETTINGS", icon: Settings },
+  { id: "submissions", label: "SUBMIT", icon: FileText, color: "text-yellow-600" },
+  { id: "vote", label: "VOTE", icon: Vote, color: "text-green-600" },
+  { id: "follow", label: "FOLLOW", icon: Users, color: "text-blue-600" },
+  { id: "settings", label: "SETTINGS", icon: Settings, color: "text-red-600" },
 ];
 
 const BottomNav = ({ activeTab, onTabChange }: BottomNavProps) => {
