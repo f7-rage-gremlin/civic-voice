@@ -28,7 +28,7 @@ const VotePage = () => {
           <ArrowLeft size={18} /> <span className="text-sm font-bold">BACK</span>
         </button>
 
-        <div className="bg-card border border-border rounded p-5">
+        <div className="bg-card border border-border rounded-lg p-5">
           <h1 className="text-2xl mb-4">{selectedLaw.title}</h1>
           <p className="text-foreground leading-relaxed">{selectedLaw.description}</p>
 
