@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BottomNav from "@/components/BottomNav";
 import SubmissionsPage from "@/pages/SubmissionsPage";
 import VotePage from "@/pages/VotePage";
@@ -62,6 +62,9 @@ const pageThemes = {
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState<keyof typeof pageThemes>("submissions");
+  useEffect(() => {
+    document.documentElement.removeAttribute("data-theme");
+  }, []);
 
   return (
     <div
