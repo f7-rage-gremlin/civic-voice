@@ -130,7 +130,7 @@ const SubmissionsPage = () => {
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
           placeholder="Title of your law submission..."
-          className="w-full bg-input text-foreground px-4 py-3 rounded border border-border focus:border-primary focus:outline-none mb-3 font-bold"
+          className="w-full bg-input text-foreground px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none mb-3 font-bold"
         />
         <textarea
           value={newDescription}
