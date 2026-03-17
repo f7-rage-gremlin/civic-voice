@@ -47,7 +47,7 @@ const FollowPage = () => {
           </div>
           <button
             onClick={() => toggleFollow(selectedUser.id)}
-            className={`flex items-center gap-2 px-4 py-2 rounded font-bold text-sm transition-all ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-sm transition-all ${
               selectedUser.isFollowing
                 ? "bg-primary text-primary-foreground"
                 : "bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground"
