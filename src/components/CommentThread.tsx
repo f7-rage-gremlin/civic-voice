@@ -70,7 +70,7 @@ const CommentItem = ({ comment, depth }: { comment: Comment; depth: number }) =>
                 />
                 <button
                   onClick={() => { setReplyText(""); setShowReplyInput(false); }}
-                  className="bg-primary text-primary-foreground text-sm px-3 py-2 rounded font-bold hover:opacity-90 transition-opacity"
+                  className="bg-primary text-primary-foreground text-sm px-3 py-2 rounded-lg font-bold hover:opacity-90 transition-opacity"
                 >
                   POST
                 </button>

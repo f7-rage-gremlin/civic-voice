@@ -159,7 +159,7 @@ const FollowPage = () => {
             </div>
             <button
               onClick={(e) => { e.stopPropagation(); toggleFollow(user.id); }}
-              className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded font-bold text-xs tracking-wider transition-all ${
+              className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg font-bold text-xs tracking-wider transition-all ${
                 user.isFollowing
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary text-muted-foreground hover:text-foreground"

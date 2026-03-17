@@ -153,7 +153,7 @@ const SubmissionsPage = () => {
           <div
             key={submission.id}
             onClick={() => setSelectedSubmission(submission)}
-            className="bg-card border border-border rounded p-4 flex gap-4 cursor-pointer hover:border-primary/30 transition-colors"
+            className="bg-card border border-border rounded-lg p-4 flex gap-4 cursor-pointer hover:border-primary/30 transition-colors"
           >
             <VoteControl
               upvotes={submission.upvotes}

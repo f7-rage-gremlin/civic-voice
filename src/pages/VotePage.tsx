@@ -139,7 +139,7 @@ const VoteButton = ({
   return (
     <button
       onClick={(e) => { e.stopPropagation(); onClick(); }}
-      className={`flex items-center gap-1.5 rounded font-bold text-xs tracking-wider transition-all ${
+      className={`flex items-center gap-1.5 rounded-lg font-bold text-xs tracking-wider transition-all ${
         compact ? "px-3 py-2" : "px-4 py-2.5"
       } ${active ? activeClass : "bg-secondary text-muted-foreground hover:text-foreground"}`}
     >
