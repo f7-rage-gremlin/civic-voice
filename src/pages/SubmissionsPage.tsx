@@ -141,7 +141,7 @@ const SubmissionsPage = () => {
         />
         <button
           onClick={handleSubmit}
-          className="bg-primary text-primary-foreground px-6 py-2.5 rounded font-bold text-sm tracking-wider hover:opacity-90 transition-opacity w-full"
+          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-bold text-sm tracking-wider hover:opacity-90 transition-opacity w-full"
         >
           SUBMIT
         </button>
