@@ -66,7 +66,7 @@ const CommentItem = ({ comment, depth }: { comment: Comment; depth: number }) =>
                   value={replyText}
                   onChange={(e) => setReplyText(e.target.value)}
                   placeholder="Write a reply..."
-                  className="flex-1 bg-input text-foreground text-sm px-3 py-2 rounded border border-border focus:border-primary focus:outline-none"
+                  className="flex-1 bg-input text-foreground text-sm px-3 py-2 rounded-lg border border-border focus:border-primary focus:outline-none"
                 />
                 <button
                   onClick={() => { setReplyText(""); setShowReplyInput(false); }}
