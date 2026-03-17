@@ -144,7 +144,7 @@ const FollowPage = () => {
         />
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-4">
         {filteredUsers.map((user) => (
           <div
             key={user.id}

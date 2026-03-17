@@ -65,7 +65,7 @@ const SettingsPage = () => {
       {settings.votingMode === "automatic" && (
         <section className="mb-8">
           <h2 className="text-lg mb-4 text-muted-foreground">ALGORITHM</h2>
-          <div className="space-y-2">
+          <div className="space-y-4">
             <SettingOption
               active={settings.algorithm === "simple"}
               onClick={() => setSettings((s) => ({ ...s, algorithm: "simple" }))}

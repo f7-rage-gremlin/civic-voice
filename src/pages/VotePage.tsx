@@ -87,7 +87,7 @@ const VotePage = () => {
     <div className="pb-20">
       <h1 className="text-3xl mb-6 text-glow">VOTE!</h1>
 
-      <div className="space-y-3">
+      <div className="space-y-4">
         {laws.map((law, index) => (
           <div
             key={law.id}
