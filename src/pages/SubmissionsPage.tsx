@@ -165,11 +165,11 @@ const SubmissionsPage = () => {
               <h3 className="font-bold text-foreground text-lg leading-tight">{submission.title}</h3>
               <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{submission.description}</p>
               <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
-                <span>@{submission.author}</span>
+                <span className="text-accent-tertiary font-bold">@{submission.author}</span>
                 <span>·</span>
                 <span>{submission.createdAt}</span>
                 <span>·</span>
-                <span className="flex items-center gap-1"><MessageSquare size={12} /> {submission.comments.length}</span>
+                <span className="flex items-center gap-1 text-accent-secondary"><MessageSquare size={12} /> {submission.comments.length}</span>
               </div>
             </div>
           </div>
