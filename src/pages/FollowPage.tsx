@@ -76,7 +76,7 @@ const FollowPage = () => {
         </div>
 
         {profileTab === "posts" && (
-          <div className="space-y-3">
+          <div className="space-y-4">
             {selectedUser.posts.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No posts yet</p>
             ) : (
@@ -94,7 +94,7 @@ const FollowPage = () => {
         )}
 
         {profileTab === "comments" && (
-          <div className="space-y-3">
+          <div className="space-y-4">
             {selectedUser.commentHistory.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No comments yet</p>
             ) : (
@@ -109,7 +109,7 @@ const FollowPage = () => {
         )}
 
         {profileTab === "voting" && (
-          <div className="space-y-2">
+          <div className="space-y-4">
             {selectedUser.votingHistory.length === 0 ? (
               <p className="text-muted-foreground text-center py-8">No voting history</p>
             ) : (
@@ -144,7 +144,7 @@ const FollowPage = () => {
         />
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-4">
         {filteredUsers.map((user) => (
           <div
             key={user.id}

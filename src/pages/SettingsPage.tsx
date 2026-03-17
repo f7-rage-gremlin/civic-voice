@@ -22,7 +22,7 @@ const SettingsPage = () => {
       {/* Privacy */}
       <section className="mb-8">
         <h2 className="text-lg mb-4 text-muted-foreground">PRIVACY</h2>
-        <div className="space-y-2">
+        <div className="space-y-4">
           <SettingOption
             active={settings.privacy === "public"}
             onClick={() => setSettings((s) => ({ ...s, privacy: "public" }))}
@@ -43,7 +43,7 @@ const SettingsPage = () => {
       {/* Voting Mode */}
       <section className="mb-8">
         <h2 className="text-lg mb-4 text-muted-foreground">VOTING</h2>
-        <div className="space-y-2">
+        <div className="space-y-4">
           <SettingOption
             active={settings.votingMode === "manual"}
             onClick={() => setSettings((s) => ({ ...s, votingMode: "manual" }))}
@@ -65,7 +65,7 @@ const SettingsPage = () => {
       {settings.votingMode === "automatic" && (
         <section className="mb-8">
           <h2 className="text-lg mb-4 text-muted-foreground">ALGORITHM</h2>
-          <div className="space-y-2">
+          <div className="space-y-4">
             <SettingOption
               active={settings.algorithm === "simple"}
               onClick={() => setSettings((s) => ({ ...s, algorithm: "simple" }))}
