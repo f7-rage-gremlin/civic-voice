@@ -129,9 +129,9 @@ const VoteButton = ({
   compact?: boolean;
 }) => {
   const config = {
-    yes: { icon: Check, activeClass: "bg-vote-yes text-background", label: "YES" },
-    no: { icon: X, activeClass: "bg-vote-no text-foreground", label: "NO" },
-    abstain: { icon: Minus, activeClass: "bg-vote-abstain text-foreground", label: "ABSTAIN" },
+    yes: { icon: Check, activeClass: "bg-vote-yes text-accent-secondary-foreground", label: "YES" },
+    no: { icon: X, activeClass: "bg-vote-no text-accent-secondary-foreground", label: "NO" },
+    abstain: { icon: Minus, activeClass: "bg-accent-tertiary text-accent-tertiary-foreground", label: "ABSTAIN" },
   };
 
   const { icon: Icon, activeClass, label } = config[type];
