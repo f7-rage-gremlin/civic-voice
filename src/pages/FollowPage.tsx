@@ -140,7 +140,7 @@ const FollowPage = () => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search people..."
-          className="w-full bg-input text-foreground pl-10 pr-4 py-3 rounded border border-border focus:border-primary focus:outline-none"
+          className="w-full bg-input text-foreground pl-10 pr-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none"
         />
       </div>
 
