@@ -164,11 +164,11 @@ export const mockUsers: UserProfile[] = [
     posts: [], commentHistory: [], votingHistory: [],
   },
   {
-    id: "u7", name: "Nigel Farage", handle: "nigelfarage", isPublic: true, isFollowing: false, isActive: false, weight: 0,
+    id: "u7", name: "Andy Burnham", handle: "andyburnham", isPublic: true, isFollowing: false, isActive: false, weight: 0,
     posts: [], commentHistory: [], votingHistory: [{ lawTitle: "Revoke Hate Speech Laws", vote: "yes" }],
   },
   {
-    id: "u8", name: "Russell Brand", handle: "russellbrand", isPublic: true, isFollowing: false, isActive: false, weight: 0,
+    id: "u8", name: "Gary Stevenson", handle: "garystevenson", isPublic: true, isFollowing: true, isActive: true, weight: 1.0,
     posts: [], commentHistory: [], votingHistory: [],
   },
   {
